@@ -2,13 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/svg+xml" href="/threejs.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plain Vite + Tailwind</title>
+    <title>Three JS Template + Tailwind</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class = "h-screen w-screen m-0 p-0">
+    <div id="app" class = "h-screen w-screen">
+      <div id="canvas-container" class = "h-screen w-screen">
+        <canvas></canvas>
+      </div>
+    </div>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
