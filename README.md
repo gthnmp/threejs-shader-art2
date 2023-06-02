@@ -1,4 +1,4 @@
-# Plain Three.js Workspace
+# Three.js Plain Workspace
 
 A plain Three.js workspace sandbox. Intended for quick sketching with Three.js
 
@@ -10,10 +10,10 @@ A plain Three.js workspace sandbox. Intended for quick sketching with Three.js
 ## Installation
 ```bash
 # Clone the repository
-git clone https://github.com/gthnmp/threejs-sketchpad.git
+git clone https://github.com/gthnmp/threejs-plain-workspace.git
 
 # Change directory
-cd threejs-sketchpad
+cd threejs-plain-workspace
 
 # Install dependencies
 npm install
