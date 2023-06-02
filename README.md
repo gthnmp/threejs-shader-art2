@@ -1,7 +1,6 @@
-# Three.js Shader Art 1
+# Three.js Shader Art 
 
-A plain Three.js workspace sandbox. Intended for quick sketching with Three.js
-A Three.js shader art experiment, inspired and tutored by [Kishimisu](https://www.youtube.com/@kishimisu)
+A Three.js shader art experiment
 
 ## Table of Contents
 
@@ -11,10 +10,10 @@ A Three.js shader art experiment, inspired and tutored by [Kishimisu](https://ww
 ## Installation
 ```bash
 # Clone the repository
-git clone https://github.com/gthnmp/threejs-shader-art1.git
+git clone https://github.com/gthnmp/threejs-shader-art2.git
 
 # Change directory
-cd threejs-shader-art1
+cd threejs-shader-art2
 
 # Install dependencies
 npm install

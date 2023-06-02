@@ -63,7 +63,7 @@ class Sketch {
         side: THREE.DoubleSide,
         uniforms: {
           imageTexture: { value: new THREE.TextureLoader().load(image) },
-          iResolution : { value: new THREE.Vector2( this.WIDTH, this.HEIGHT ) },
+          iDeviceRatio : { value: new THREE.Vector2( this.WIDTH, this.HEIGHT ) },
           iTime: { value: 0.0 } 
         }
       })
