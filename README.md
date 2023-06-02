@@ -1,6 +1,7 @@
-# Three.js Plain Workspace
+# Three.js Shader Art 1
 
 A plain Three.js workspace sandbox. Intended for quick sketching with Three.js
+A Three.js shader art experiment, inspired and tutored by [Kishimisu](https://www.youtube.com/@kishimisu)
 
 ## Table of Contents
 
@@ -10,10 +11,10 @@ A plain Three.js workspace sandbox. Intended for quick sketching with Three.js
 ## Installation
 ```bash
 # Clone the repository
-git clone https://github.com/gthnmp/threejs-plain-workspace.git
+git clone https://github.com/gthnmp/threejs-shader-art1.git
 
 # Change directory
-cd threejs-plain-workspace
+cd threejs-shader-art1
 
 # Install dependencies
 npm install
