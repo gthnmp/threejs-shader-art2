@@ -1,8 +1,8 @@
 uniform float iTime;
 varying vec2 vertexUV;
 
-vec3 colorPallete( float t ){
-  vec3 a = vec3( 0.5, 0.5, 0.5 );
+vec3 colorPallete( float t ){ 
+  vec3 a = vec3( 0.5, 0.5, 0.5 ); 
   vec3 b = vec3( 0.5, 0.5, 0.5 );
   vec3 c = vec3( 1.0, 1.0, 1.0 );
   vec3 d = vec3( 0.263, 0.416, 0.557 );
@@ -11,14 +11,20 @@ vec3 colorPallete( float t ){
 }
 
 void main(){
-  float d = length(vertexUV);
-  vec3 color = colorPallete(d + iTime);
+  vec3 finalColor = vec3(0.0);
+  vec2 vertexUV0 = vertexUV;
 
-  d = sin(d * 9. +  iTime)/8.;
-  d = abs(d);
-  d = 0.02 / d;
+  for (float i = 0.0; i < 4.0; i++){
+    vec2 vertexUV = fract(vertexUV * 4.0) - 0.5;
+    float distance = length(vertexUV) * exp(-length(vertexUV0));
+    vec3 color = colorPallete(length(vertexUV0) + i*4. + iTime*.5);
 
-  color *= d;
+    distance = sin(distance * 8. - iTime)/8.;
+    distance = abs(distance);
+    distance = pow(0.01 / distance, 1.2);
 
-  gl_FragColor = vec4( color, 1.0 );
+    finalColor += color * distance;
+  }
+
+  gl_FragColor = vec4( finalColor, 1.0 );
 }
